@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.donalwall.Controllers.DisplayTrayController">
+   <top>
+      <FlowPane prefHeight="83.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Display Tray">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </Label>
+            <Label text="Select Colour">
+               <FlowPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </FlowPane.margin>
+            </Label>
+            <ChoiceBox fx:id="matColor" prefWidth="150.0">
+               <FlowPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </FlowPane.margin>
+            </ChoiceBox>
+            <Label text="Depth">
+               <FlowPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </FlowPane.margin>
+            </Label>
+            <TextField fx:id="depth">
+               <FlowPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </FlowPane.margin>
+            </TextField>
+            <Label text="Width">
+               <FlowPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </FlowPane.margin>
+            </Label>
+            <TextField fx:id="width">
+               <FlowPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </FlowPane.margin>
+            </TextField>
+            <Label text="UID">
+               <FlowPane.margin>
+                  <Insets left="10.0" />
+               </FlowPane.margin>
+            </Label>
+            <TextField fx:id="UID2">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </FlowPane.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#addTray" text="Add Tray">
+               <FlowPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </FlowPane.margin>
+            </Button>
+         </children>
+      </FlowPane>
+   </top>
+   <center>
+      <ListView fx:id="dty" onKeyPressed="#deleteTray" onMouseClicked="#selectItem" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <FlowPane prefHeight="39.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <Button alignment="CENTER" mnemonicParsing="false" onAction="#changeScene1" text="Previous">
+            <FlowPane.margin>
+               <Insets left="10.0" right="10.0" />
+            </FlowPane.margin></Button>
+         <Button alignment="CENTER" mnemonicParsing="false" onAction="#changeScene2" text="Jewellery Item">
+            <FlowPane.margin>
+               <Insets left="10.0" right="10.0" />
+            </FlowPane.margin></Button>
+         <FlowPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </FlowPane.margin>
+         <Button alignment="CENTER" mnemonicParsing="false" onAction="#save" text="Save">
+            <FlowPane.margin>
+               <Insets left="10.0" right="10.0" />
+            </FlowPane.margin>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#resetTrays" text="Reset All">
+            <FlowPane.margin>
+               <Insets left="10.0" right="10.0" />
+            </FlowPane.margin>
+         </Button>
+      </FlowPane>
+   </bottom>
+</BorderPane>

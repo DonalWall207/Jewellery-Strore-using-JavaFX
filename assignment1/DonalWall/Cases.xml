@@ -1,0 +1,12 @@
+<object-stream>
+  <com.example.donalwall.Models.DisplayCase>
+    <nextCase>
+      <UID>33</UID>
+      <isLit>false</isLit>
+      <isWallMounted>true</isWallMounted>
+    </nextCase>
+    <UID>12</UID>
+    <isLit>false</isLit>
+    <isWallMounted>false</isWallMounted>
+  </com.example.donalwall.Models.DisplayCase>
+</object-stream>
